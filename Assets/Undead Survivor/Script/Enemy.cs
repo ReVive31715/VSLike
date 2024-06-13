@@ -24,7 +24,6 @@ public class Enemy : MonoBehaviour
     
     void FixedUpdate()
     {
-
         if (!isLive)
             return;
        
@@ -35,7 +34,7 @@ public class Enemy : MonoBehaviour
     }
 
     void LateUpdate()
-    {
+    { 
         if (!isLive)
             return;
 

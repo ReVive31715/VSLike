@@ -12,23 +12,23 @@ public class Player : MonoBehaviour
     SpriteRenderer spriteRenderer;
     Animator animator;
 
-    private void Awake()
+    void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
     }
-    private void FixedUpdate()
+    void FixedUpdate()
     {
         Vector2 nextVec = inputVec * speed * Time.fixedDeltaTime;
         rigid.MovePosition(rigid.position + nextVec);
     }
-    private void OnMove(InputValue value)
+    void OnMove(InputValue value)
     {
         inputVec = value.Get<Vector2>();
     }
 
-    private void LateUpdate()
+    void LateUpdate()
     {
         animator.SetFloat("Speed", inputVec.magnitude);
 
