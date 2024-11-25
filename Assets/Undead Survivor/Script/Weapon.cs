@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
+using Unity.Jobs;
 using UnityEngine;
 
 public class Weapon : MonoBehaviour
@@ -16,15 +17,15 @@ public class Weapon : MonoBehaviour
 
     void Awake()
     {
-        player = GetComponentInParent<Player>();
-    }
-
-    void Start()
-    {
-        Init();
+        player = GameManager.instance.player;
     }
     void Update()
     {
+        if (!GameManager.instance.isLive)
+        {
+            return;
+        }
+
         switch (id)
         {
             case 0:
@@ -42,11 +43,6 @@ public class Weapon : MonoBehaviour
                 break;
 
         }
-
-        if (Input.GetMouseButtonDown(0)) 
-        {
-            LevelUp(20, 5);
-        }
     }
 
     public void LevelUp(float damage, int count)
@@ -58,9 +54,28 @@ public class Weapon : MonoBehaviour
         {
             Place();
         }
+
+        player.BroadcastMessage("ApplyEquip", SendMessageOptions.DontRequireReceiver);
     }
-    public void Init()
+    public void Init(ItemData data)
     {
+        name = "Weapon " + data.itemId;
+        transform.parent = player.transform;
+        transform.localPosition = Vector3.zero;
+
+        id = data.itemId;
+        damage = data.baseDamage;
+        count = data.baseCount;
+        
+        for (int i = 0; i < GameManager.instance.pool.prefabs.Length; i++)
+        {
+            if (data.projectile == GameManager.instance.pool.prefabs[i])
+            {
+                prefabId = i;
+                break;
+            }
+        }
+
         switch (id)
         {
             case 0:
@@ -73,6 +88,8 @@ public class Weapon : MonoBehaviour
                 break;
 
         }
+
+        player.BroadcastMessage("ApplyEquip", SendMessageOptions.DontRequireReceiver);
     }
 
     void Place()

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -22,6 +23,11 @@ public class Player : MonoBehaviour
     }
     void FixedUpdate()
     {
+        if (!GameManager.instance.isLive)
+        {
+            return;
+        }
+
         Vector2 nextVec = inputVec * speed * Time.fixedDeltaTime;
         rigid.MovePosition(rigid.position + nextVec);
     }
@@ -32,6 +38,11 @@ public class Player : MonoBehaviour
 
     void LateUpdate()
     {
+        if (!GameManager.instance.isLive)
+        {
+            return;
+        }
+
         animator.SetFloat("Speed", inputVec.magnitude);
 
         if (inputVec.x != 0) {
