@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6fd58f7cded41c14883e171b9f774a1c, type: 3}
-  m_Name: Item 2
+  m_Name: Shoe
   m_EditorClassIdentifier: 
-  itemType: 2
-  itemId: 2
-  itemName: "\uC7A5\uAC11"
-  itemDescription: "\uACF5\uACA9\uB825 {0}% \uC0C1\uC2B9"
-  itemIcon: {fileID: -201829820, guid: d71a3dc7aa20fad4f9a99fc76a9254ba, type: 3}
+  itemType: 4
+  itemId: 4
+  itemName: "\uC2E0\uBC1C"
+  itemDescription: "\uC774\uB3D9 \uC18D\uB3C4 {0}% \uC0C1\uC2B9"
+  itemIcon: {fileID: -966295699, guid: d71a3dc7aa20fad4f9a99fc76a9254ba, type: 3}
   baseDamage: 0
   baseCount: 0
   damages:

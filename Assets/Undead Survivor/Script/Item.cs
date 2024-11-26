@@ -33,8 +33,9 @@ public class Item : MonoBehaviour
         textLevel.text = "LV. " + level;
         switch (data.itemType)
         {
-            case ItemData.ItemType.Melee:
+            case ItemData.ItemType.Book:
             case ItemData.ItemType.Range:
+            case ItemData.ItemType.Pencil:
                 textDescription.text = string.Format(data.itemDescription, (data.damages[level] * data.baseDamage), data.counts[level]);
                 break;
             case ItemData.ItemType.Glove:
@@ -52,7 +53,7 @@ public class Item : MonoBehaviour
     {
         switch(data.itemType)
         {
-            case ItemData.ItemType.Melee:
+            case ItemData.ItemType.Book:
             case ItemData.ItemType.Range:
                 if (level == 0)
                 {

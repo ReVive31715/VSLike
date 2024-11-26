@@ -23,6 +23,7 @@ public class Bullet : MonoBehaviour
         {
             rigid.velocity = dir * 7;
         }
+
     }
 
     void OnTriggerEnter2D(Collider2D collision)

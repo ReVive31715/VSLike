@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6fd58f7cded41c14883e171b9f774a1c, type: 3}
-  m_Name: Item 4
+  m_Name: Heal
   m_EditorClassIdentifier: 
-  itemType: 4
-  itemId: 4
+  itemType: 5
+  itemId: 5
   itemName: "\uD790"
   itemDescription: "\uCCB4\uB825 100% \uD68C\uBCF5"
   itemIcon: {fileID: 927338625, guid: d71a3dc7aa20fad4f9a99fc76a9254ba, type: 3}

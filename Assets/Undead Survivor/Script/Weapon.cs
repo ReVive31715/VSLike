@@ -83,10 +83,12 @@ public class Weapon : MonoBehaviour
                 Place();
 
                 break;
-            default:
-                speed = 0.3f;
+            case 1:
+                speed = 1f;
                 break;
-
+            case 2:
+                speed = 3f;
+                break;
         }
 
         player.BroadcastMessage("ApplyEquip", SendMessageOptions.DontRequireReceiver);
@@ -125,14 +127,23 @@ public class Weapon : MonoBehaviour
             return; 
         }
 
-        Vector3 targetPos = player.scanner.nearestTarget.position;
-        Vector3 dir =  targetPos - transform.position;
-        dir = dir.normalized;
+        switch (id)
+        {
+            case 1:
+                Vector3 targetPos = player.scanner.nearestTarget.position;
+                Vector3 dir = targetPos - transform.position;
+                dir = dir.normalized;
 
-        Transform bullet = GameManager.instance.pool.Get(prefabId).transform;
-        bullet.position = transform.position;
-        bullet.rotation = Quaternion.FromToRotation(Vector3.up, dir);
-        bullet.GetComponent<Bullet>().Init(damage, count, dir);
+                Transform bullet = GameManager.instance.pool.Get(prefabId).transform;
+                bullet.position = transform.position;
+                bullet.rotation = Quaternion.FromToRotation(Vector3.up, dir);
+                bullet.GetComponent<Bullet>().Init(damage, count, dir);
+
+                break;
+            case 2:
+
+                break;
+        }
 
     }
 }
