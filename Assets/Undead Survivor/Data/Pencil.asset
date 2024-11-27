@@ -15,16 +15,15 @@ MonoBehaviour:
   itemType: 0
   itemId: 2
   itemName: "\uC5F0\uD544"
-  itemDescription: "\uBC94\uC704 \uB0B4\uC5D0 {0}\uC758 \uD53C\uD574\uB97C \uC785\uD788\uB294\n\uC5F0\uD544.
-    ({1}\uD68C \uCD94\uAC00 \uACF5\uACA9)"
-  itemIcon: {fileID: -1786786079, guid: d71a3dc7aa20fad4f9a99fc76a9254ba, type: 3}
-  baseDamage: 5
-  baseCount: 1
+  itemDescription: "\uC804\uBC29\uC5D0 {0}\uC758 \uD53C\uD574\uB97C \uC785\uD788\uB294\n\uC5F0\uD544. "
+  itemIcon: {fileID: 1126874353, guid: 7fb1caf7c17f6794ca691a197f9e1739, type: 3}
+  baseDamage: 8
+  baseCount: 0
   damages:
+  - 0
   - 0.5
   - 1
   - 1.5
   - 2
-  - 2.5
-  counts: 0100000001000000010000000100000001000000
-  projectile: {fileID: 6641352566940332941, guid: ffda4deb556cb6246a0a5028b0f4a665, type: 3}
+  counts: 0000000000000000000000000000000000000000
+  projectile: {fileID: 4096198204483308406, guid: 82146c53b9e872440b032ab0620494f4, type: 3}

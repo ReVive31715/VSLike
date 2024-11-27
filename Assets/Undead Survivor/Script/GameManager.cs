@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     public int level;
     public int kill;
     public int exp;
-    public int[] nextExp = { 10, 30, 60, 100, 150, 210, 280, 360, 450, 600 };
+    public int[] nextExp = { 10, 20, 30, 50, 80, 130, 210, 340, 550, 890 };
 
     [Header("Object")]
     public Player player;
@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
     {
         health = maxHealth;
         uiLevelUp.Select(2);        //Temp
+
         Resume();
     }
     public void EndGame()

@@ -18,7 +18,7 @@ public class Equip : MonoBehaviour
         ApplyEquip();
     }
 
-    public void levelUp(float rate)
+    public void LevelUp(float rate)
     {
         this.rate = rate;
         ApplyEquip();
@@ -47,8 +47,11 @@ public class Equip : MonoBehaviour
                 case 0:
                     weapon.speed = 150 + (150 * rate); 
                     break;
-                default:
-                    weapon.speed = 0.5f * (1f - rate);
+                case 1:
+                    weapon.speed = 1.5f * (1f - rate);
+                    break;
+                case 2:
+                    weapon.speed = 1.7f * (1f - rate);
                     break;
             }
         }

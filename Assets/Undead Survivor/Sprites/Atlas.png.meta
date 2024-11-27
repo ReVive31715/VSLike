@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c8e43c53203805449bda593ef7db0f1e
+guid: 7fb1caf7c17f6794ca691a197f9e1739
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 18
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,127 +117,211 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tile 1
+      name: Icon_Pencil
       rect:
         serializedVersion: 2
         x: 0
-        y: 19
+        y: 62
         width: 18
         height: 18
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54e1cc6619354c14585cdbe5ccfbe0ac
-      internalID: -1277703779
+      spriteID: c792303862db33445b2f4da2a9fe4afd
+      internalID: 1126874353
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile 2
+      name: Icon_Range
       rect:
         serializedVersion: 2
         x: 19
-        y: 19
+        y: 62
         width: 18
         height: 18
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd32455b38256cf4686a7bb413943494
-      internalID: -1626414320
+      spriteID: 2d9b3b95e944adc4ca330f9c654a4641
+      internalID: -1235879618
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile 3
+      name: Icon_Book
       rect:
         serializedVersion: 2
         x: 38
-        y: 19
+        y: 62
         width: 18
         height: 18
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0dbf1240144a1b43b756a64a340a91b
-      internalID: 1965150490
+      spriteID: 2c86443a371310e43955517039526f45
+      internalID: -2022712227
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile 4
+      name: Bullet_Range
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 72
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e905a34d3a93684bbedf24150e55b20
+      internalID: 1796080583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet_Book
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 68
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f65bc505f0a91954eb36fafadb386891
+      internalID: 1493816871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Glove
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 43
         width: 18
         height: 18
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55e197785667c7b4f9978d7dc19764be
-      internalID: -719912477
+      spriteID: 30439af79ff779c4298fb9e148789eea
+      internalID: -213175872
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile 5
+      name: Icon_Shoe
       rect:
         serializedVersion: 2
         x: 19
-        y: 0
+        y: 43
         width: 18
         height: 18
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36bf14a4fdb7d7944b3a2a985c49608f
-      internalID: -489706343
+      spriteID: 55fbc51afadeacc4cb63f9239dc46d4c
+      internalID: -1481614645
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile 6
+      name: Icon Heal
       rect:
         serializedVersion: 2
         x: 38
-        y: 0
+        y: 43
         width: 18
         height: 18
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bae8e211de60c3745a37cb52ef9c9bd5
-      internalID: 189200141
+      spriteID: 37a21b9f9cbc2f64daef8718c50f759b
+      internalID: -105351309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Title_Win
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 21
+        width: 78
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77761caaf0b11374d8fff84d4017828a
+      internalID: 621917793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ttile_Lost
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 60
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91e9d41ac2ad75f429968939d8b41f74
+      internalID: -1598217962
       vertices: []
       indices: 
       edges: []
@@ -253,12 +337,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Tile 2: -1626414320
-      Tile 6: 189200141
-      Tile 3: 1965150490
-      Tile 4: -719912477
-      Tile 1: -1277703779
-      Tile 5: -489706343
+      Ttile_Lost: -1598217962
+      Icon_Pencil: 1126874353
+      Atlas_11: 294278426
+      Bullet_Book: 1493816871
+      Icon_Book: -2022712227
+      Icon_Range: -1235879618
+      Icon_Shoe: -1481614645
+      Title_Win: 621917793
+      Atlas_13: 790563696
+      Bullet_Range: 1796080583
+      Atlas_10: -1212100602
+      Icon_Glove: -213175872
+      Atlas_9: -1781911681
+      Icon Heal: -105351309
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

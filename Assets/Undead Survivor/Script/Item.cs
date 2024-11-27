@@ -35,8 +35,10 @@ public class Item : MonoBehaviour
         {
             case ItemData.ItemType.Book:
             case ItemData.ItemType.Range:
+                textDescription.text = string.Format(data.itemDescription, ((data.damages[level] + 1) * data.baseDamage), data.counts[level]);
+                break;
             case ItemData.ItemType.Pencil:
-                textDescription.text = string.Format(data.itemDescription, (data.damages[level] * data.baseDamage), data.counts[level]);
+                textDescription.text = string.Format(data.itemDescription, ((data.damages[level] + 1) * data.baseDamage));
                 break;
             case ItemData.ItemType.Glove:
             case ItemData.ItemType.Shoe:
@@ -55,6 +57,7 @@ public class Item : MonoBehaviour
         {
             case ItemData.ItemType.Book:
             case ItemData.ItemType.Range:
+            case ItemData.ItemType.Pencil:
                 if (level == 0)
                 {
                     GameObject newWeapon = new GameObject();
@@ -85,7 +88,7 @@ public class Item : MonoBehaviour
                 else
                 {
                     float nextRate = data.damages[level];
-                    equip.levelUp(nextRate);
+                    equip.LevelUp(nextRate);
                 }
                 level++;
                 break;

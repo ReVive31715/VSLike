@@ -17,14 +17,14 @@ MonoBehaviour:
   itemName: "\uCC45"
   itemDescription: "{0}\uC758 \uD53C\uD574\uB97C \uC785\uD788\uB294 3\uAC1C\uC758
     \n\uCC45. (\uCC45 {1}\uAC1C \uCD94\uAC00)"
-  itemIcon: {fileID: -181907988, guid: d71a3dc7aa20fad4f9a99fc76a9254ba, type: 3}
-  baseDamage: 4
+  itemIcon: {fileID: -2022712227, guid: 7fb1caf7c17f6794ca691a197f9e1739, type: 3}
+  baseDamage: 3
   baseCount: 3
   damages:
-  - 0.5
-  - 1
-  - 1.5
-  - 2
-  - 2.5
+  - 0
+  - 0.4
+  - 0.8
+  - 1.2
+  - 1.6
   counts: 0100000001000000010000000100000002000000
   projectile: {fileID: 449179624441495215, guid: edbef8ab1039a644092b086645b9f4af, type: 3}
